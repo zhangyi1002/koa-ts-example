@@ -1,0 +1,28 @@
+{
+  "name": "koa-ts-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev ./src/index.ts -P tsconfig.json --no-cache",
+    "build": "tsc -P tsconfig.json && node ./dist/index.js",
+    "tslint": "tslint --fix -p tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.40",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "async-validator": "^3.2.2",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-xtime": "^1.0.0"
+  }
+}
